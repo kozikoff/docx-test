@@ -17,7 +17,6 @@ import static com.qabonsai.docxtest.IO.readFile;
 
 public class DOCX {
     public final String name;
-    //public final XMLSlideShow powerpoint;
     public final XWPFDocument docx;
     public final HWPFDocument doc;
 
@@ -25,7 +24,7 @@ public class DOCX {
         return fileType;
     }
 
-    public FileType fileType;
+    private final FileType fileType;
 
     public enum FileType {
         DOCX,
