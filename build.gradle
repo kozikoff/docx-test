@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+}
+
+group 'com.qabonsai'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(
+            'org.apache.poi:poi-ooxml:5.2.5',
+            'org.apache.poi:poi:5.2.5',
+            'org.hamcrest:hamcrest:2.2',
+            'org.apache.poi:poi-scratchpad:5.2.5'
+    )
+    testImplementation(
+            'org.junit.jupiter:junit-jupiter-api:5.10.2',
+            'org.hamcrest:hamcrest:2.2'
+    )
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.2'
+}
+
+test {
+    useJUnitPlatform()
+}
