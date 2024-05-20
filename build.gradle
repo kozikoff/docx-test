@@ -3,7 +3,7 @@ plugins {
     id 'maven-publish'
 }
 
-group 'com.qabonsai'
+group = 'com.qabonsai.docx-test'
 version '1.0-SNAPSHOT'
 
 repositories {
@@ -14,8 +14,8 @@ dependencies {
     implementation(
             'org.apache.poi:poi-ooxml:5.2.5',
             'org.apache.poi:poi:5.2.5',
-            'org.hamcrest:hamcrest:2.2',
-            'org.apache.poi:poi-scratchpad:5.2.5'
+            'org.apache.poi:poi-scratchpad:5.2.5',
+            'org.hamcrest:hamcrest:2.2'
     )
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.10.2',

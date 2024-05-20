@@ -55,9 +55,8 @@ public class DOCX {
                 break;
             case INVALID:
             default:
-                throw new IllegalArgumentException("Invalid word file " + name);
+                throw new IllegalArgumentException("Invalid Word file " + name);
         }
-
     }
 
     public DOCX(File wordFile) {
@@ -92,9 +91,7 @@ public class DOCX {
         if (content.length > 4 &&
                 (content[0] == (byte) 0xD0 && content[1] == (byte) 0xCF && content[2] == (byte) 0x11 && content[3] == (byte) 0xE0)) {
             return FileType.DOC;
-        }
-
-        else {
+        } else {
             return FileType.INVALID;
         }
     }

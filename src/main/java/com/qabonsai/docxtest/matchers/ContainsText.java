@@ -26,7 +26,7 @@ public class ContainsText extends DOCXMatcher {
                 default -> false;
             };
         } catch (IOException e) {
-            throw new IllegalArgumentException("Failed to read DOCX file " + item.name, e);
+            throw new IllegalArgumentException("Failed to read Word file " + item.name, e);
         }
     }
 

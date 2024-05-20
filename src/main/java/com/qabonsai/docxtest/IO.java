@@ -27,11 +27,11 @@ public class IO {
         return result.toByteArray();
     }
 
-    static byte[] readFile(File pptxFile) {
+    static byte[] readFile(File docxFile) {
         try {
-            return Files.readAllBytes(Paths.get(pptxFile.getAbsolutePath()));
+            return Files.readAllBytes(Paths.get(docxFile.getAbsolutePath()));
         } catch (IOException e) {
-            throw new IllegalArgumentException("Failed to read PPTX file " + pptxFile, e);
+            throw new IllegalArgumentException("Failed to read Word file " + docxFile, e);
         }
     }
 }
