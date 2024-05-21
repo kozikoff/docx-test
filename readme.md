@@ -2,6 +2,10 @@
 
 MS Word testing library
 
+Testing Word files (.doc and .docx) is important for the quality of software and web services. If users can export data to Word, it's necessary to check that the files contain all the required information. This is especially crucial for business documents and reports.
+
+The docx-test library in Java helps QA engineers check the content of Word files. With its help, you can quickly and accurately ensure that the files include all the necessary texts and data. This reduces the risk of errors and improves the user experience. This library will be useful for testers working with platforms that support Word export. It simplifies testing and enhances the reliability of the product.
+
 Make sure your code always generates correct and valid docx and doc files!
 
 ## How to use
